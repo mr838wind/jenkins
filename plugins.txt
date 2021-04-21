@@ -50,3 +50,5 @@ pipeline-stage-step
 blueocean
 blueocean-autofavorite
 gitlab-plugin
+config-file-provider
+nodejs
