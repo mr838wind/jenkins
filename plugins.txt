@@ -52,3 +52,7 @@ blueocean-autofavorite
 gitlab-plugin
 config-file-provider
 nodejs
+docker-workflow
+docker-build-step
+pipeline-maven
+publish-over-ssh
