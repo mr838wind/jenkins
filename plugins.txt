@@ -57,3 +57,4 @@ docker-build-step
 pipeline-maven
 publish-over-ssh
 pipeline-utility-steps
+gradle
