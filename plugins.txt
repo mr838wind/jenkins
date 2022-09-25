@@ -51,7 +51,6 @@ blueocean-autofavorite
 gitlab-plugin
 config-file-provider
 nodejs
-docker
 docker-plugin
 docker-workflow
 docker-build-step
