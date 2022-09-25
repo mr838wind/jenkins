@@ -5,7 +5,6 @@ branch-api
 cloudbees-folder
 credentials
 cvs
-docker
 durable-task
 external-monitor-job
 git-client
@@ -52,6 +51,8 @@ blueocean-autofavorite
 gitlab-plugin
 config-file-provider
 nodejs
+docker
+docker-plugin
 docker-workflow
 docker-build-step
 pipeline-maven
