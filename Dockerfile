@@ -22,9 +22,9 @@ RUN add-apt-repository \
    $(lsb_release -cs) \
    stable"
 RUN apt-get update  -qq \
-    && apt-get install docker-ce docker-ce-cli containerd.io -y
-RUN usermod -aG docker jenkins
-RUN usermod -aG root jenkins
+    && apt-get install docker-ce-cli -y
+#RUN usermod -aG docker jenkins
+#RUN usermod -aG root jenkins
 RUN apt-get clean
 RUN curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
 # use root user

@@ -9,7 +9,6 @@ If you are using this on production, you may want to comment the password setup 
 ```sh
 docker build -t somejenkins .
 docker run -d -v /var/run/docker.sock:/var/run/docker.sock
--v $(which docker):/usr/bin/docker -p 8080:8080 somejenkins
 ```
 
 -----------------
@@ -20,9 +19,5 @@ docker run -d -v /var/run/docker.sock:/var/run/docker.sock
 -----------------
 ## dockerhub
 - image name: mr838wind/jenkins_with_plugins
-- docker build -t mr838wind/jenkins_with_plugins:v1.0 -t mr838wind/jenkins_with_plugins:latest .
-
-### bug
-- -v $(which docker):/usr/bin/docker
-  - don't know why it did not work, use this instead: -v /usr/bin/docker:/usr/bin/docker
+- docker build -t mr838wind/jenkins_with_plugins:v1.1 -t mr838wind/jenkins_with_plugins:latest .
 
