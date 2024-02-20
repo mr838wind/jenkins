@@ -17,7 +17,7 @@ If you are using this on production, you may want to comment the password setup 
 
 ```sh
 docker build -t mr838wind/jenkins_with_plugins:v1.2 -t mr838wind/jenkins_with_plugins:latest .
-docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock mr838wind/jenkins_with_plugins:latest
+docker run -d -p 82:8080 -v /var/run/docker.sock:/var/run/docker.sock mr838wind/jenkins_with_plugins:latest
 
 docker login
 docker push mr838wind/jenkins_with_plugins:v1.2
