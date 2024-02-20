@@ -6,11 +6,6 @@ Custom jenkins images with docker-compose,docker and all the plugins pre-install
 
 If you are using this on production, you may want to comment the password setup on the jenkins file 
 
-```sh
-docker build -t somejenkins .
-docker run -d -v /var/run/docker.sock:/var/run/docker.sock
-```
-
 -----------------
 ## search plugin
 - [jenkins plugin site](https://plugins.jenkins.io/)
@@ -19,8 +14,15 @@ docker run -d -v /var/run/docker.sock:/var/run/docker.sock
 -----------------
 ## dockerhub
 - image name: mr838wind/jenkins_with_plugins
-- docker build -t mr838wind/jenkins_with_plugins:v1.2 -t mr838wind/jenkins_with_plugins:latest .
 
+```sh
+docker build -t mr838wind/jenkins_with_plugins:v1.2 -t mr838wind/jenkins_with_plugins:latest .
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock
+
+docker login
+docker push mr838wind/jenkins_with_plugins:v1.2
+docker push mr838wind/jenkins_with_plugins:latest
+```
 
 -----------------
 ## debug
