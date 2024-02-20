@@ -19,5 +19,12 @@ docker run -d -v /var/run/docker.sock:/var/run/docker.sock
 -----------------
 ## dockerhub
 - image name: mr838wind/jenkins_with_plugins
-- docker build -t mr838wind/jenkins_with_plugins:v1.1 -t mr838wind/jenkins_with_plugins:latest .
+- docker build -t mr838wind/jenkins_with_plugins:v1.2 -t mr838wind/jenkins_with_plugins:latest .
+
+
+-----------------
+## debug
+
+ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+- sudo ln -s ~/Library/Containers/com.docker.docker/Data/docker.raw.sock /var/run/docker.sock
 
