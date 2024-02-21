@@ -59,3 +59,4 @@ publish-over-ssh
 pipeline-utility-steps
 gradle
 ssh-steps
+ssh-agent
