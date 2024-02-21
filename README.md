@@ -14,6 +14,7 @@ If you are using this on production, you may want to comment the password setup 
 -----------------
 ## dockerhub
 - image name: mr838wind/jenkins_with_plugins
+- or run with:  docker-compose up -d 
 
 ```sh
 docker build -t mr838wind/jenkins_with_plugins:v1.2 -t mr838wind/jenkins_with_plugins:latest .
